@@ -1,0 +1,127 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffc0cb; /* Darker pink background */
+    color: #880e4f;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #d81b60; /* Dark pink banner */
+    color: #fff;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: glow 1.5s infinite alternate;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Glow Effect */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff79b0, 0 0 30px #ff79b0, 0 0 40px #ff79b0;
+    }
+    100% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff79b0, 0 0 40px #ff79b0, 0 0 50px #ff79b0;
+    }
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #e91e63;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+}
+
+/* Gallery Section */
+.gallery {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    color: #d81b60;
+    margin-bottom: 20px;
+}
+
+.photo-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    border: 3px solid #e91e63;
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Letter Section */
+.letter {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.letter h2 {
+    font-size: 2.5rem;
+    color: #c2185b;
+    margin-bottom: 20px;
+}
+
+.letter-content {
+    font-size: 1.2rem;
+    padding: 20px;
+    border: 2px dashed #e91e63;
+    background-color: #ffe4e1;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #f48fb1;
+    color: #fff;
+    border-radius: 10px;
+}
